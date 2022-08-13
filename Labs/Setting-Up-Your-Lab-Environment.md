@@ -7,7 +7,7 @@ tools and techniques. To do this, we will configure our personal computer to
 host a <b>virtual lab environment</b>. This environment will run on top of 
 your computer's operating system using your physical system resources (CPU, 
 RAM, storage, etc) to deploy virtual instances of the infrastructure, web 
-applications, and machines we are going to develop our skills against. \
+applications, and machines we are going to develop our skills against. 
 
 <b>1. Download Oracle VirtualBox</b> \
 The first step to configuring our lab environment is to download a 
@@ -17,12 +17,12 @@ physical host (like mouse/keyboard inputs and USB devices). The hypervisor
 covered in this tutorial is Oracle VirtualBox, but there are certainly other 
 choices to be made. To download VirtualBox, go 
 [here](https://virtualbox.org/wiki/Downloads) and select the appropriate
-download for your machine. \
+download for your machine. 
 
 <b>THINGS TO NOTE FOR APPLE USERS:</b> \
 Apple M1 and M2 chips are inherently incompatible with virtualization 
 through VirtualBox. You will need to install VirtualBox on a host with a 
-processor on x86 (non-ARM) architecture. \
+processor on x86 (non-ARM) architecture. 
 
 When installing VirtualBox on Mac OSX, you will need to navigate to the 
 Security & Privacy tab of your System Settings, click the lock in the lower 
@@ -31,14 +31,14 @@ available box to allow Oracle VirtualBox to make changes to your system. If
 you do not complete this step, you will be unable to provision any virtual
 machines. <b> To repair your installation if you have run into this issue, 
 uninstall VirtualBox, restart your system, reinstall VirtualBox, make the 
-appropriate security changes, and restart your system one final time.</b> \
+appropriate security changes, and restart your system one final time.</b> 
 
 <b>THINGS TO NOTE FOR WINDOWS USERS:</b> \
 If you are running Windows 11 (and some instances of Windows 10, depending on 
 your motherboard), you may need to enable virtualization in the BIOS of your
 machine. BIOS environments vary from manufacturer to manufacturer, so be sure 
 to consult your PC's (if assembled by an OEM) or motherboard's (if assembled 
-by you or an aftermarket technician) documentation to complete this step. \
+by you or an aftermarket technician) documentation to complete this step. 
 
 <b>2. Build Your First Virtual Machine</b> \
 Once you have VirtualBox installed, it's time to build your first virtual machine 
@@ -70,7 +70,7 @@ location where you downloaded the Ubuntu .iso and open it. Make sure the .iso is
 and then click "Start." YOU DID IT! Ubuntu will ask you a few questions as you install, you can leave these 
 as the pre-selected defaults. Once Ubuntu is installed, it will ask you to create the host name (I recommend 
 keeping the same name the VM is named in VirtualBox, "Lab-Host"), a username, and a password. Once these have 
-been created, Ubuntu will boot into the desktop environment, and you are officially good to go! \
+been created, Ubuntu will boot into the desktop environment, and you are officially good to go! 
 
 <b>3. Configuring Your VM For Docker</b> \
 Now that we have our machine running, let's get it configured to host our lab environment. The first thing we're 
@@ -85,10 +85,9 @@ applications with available updates and answer "yes" to all prompts. This comman
 complete. Once this command has completed and the command prompt has returned again, run the command `sudo apt 
 install docker.io` to install the Docker service. Once Docker is installed, you can confirm the service is running 
 by running the command `systemctl status docker'. If you check the status of Docker, exit the status report by pressing 
-"q" to return to the command prompt. Assuming Docker was showing as running, we're ready to spin up our first container! \
+"q" to return to the command prompt. Assuming Docker was showing as running, we're ready to spin up our first container! 
 
 <b>4. Using Docker To Spawn An Instance Of DVWA, The Damn Vulnerable Web Application</b> \
- 
 To test our new platform, we are going to spin up an instance of DVWA, the Damn Vulnerable Web Application. This app will 
 have its own lab dedicated to it down the line, but for now we're just using it to check the functionality of Docker. To 
 actually spawn the container, run the command `sudo docker run --rm --name dvwa -p 80:80 vulnerable/web-dvwa`. Enter your 
@@ -98,10 +97,10 @@ of your terminal. Launch Firefox from the Task Bar on the left-hand side, and na
 172.17.0.2). Once you have entered your dvwa container's IP address in the URL bar, hit enter, and you should be met with 
 the DVWA login page! Feel free to poke around the web app, but we are done for now. After you have finished exploring, return 
 to the Terminal window where your dvwa container is running and press <b>CNTRL + C</b> (or <b>CMND + C</b> on Mac OSX) to exit 
-the container, which will also remove it. You can confirm the container is removed by running the command `sudo docker ps`. \
+the container, which will also remove it. You can confirm the container is removed by running the command `sudo docker ps`. 
 
 <b>That's it! Your Lab-Host is now configred to host various containers we will use to explore fundamental cyber security 
-practices, techniques, and concepts. Give yourself a pat on the back, you've earned it!</b> \
+practices, techniques, and concepts. Give yourself a pat on the back, you've earned it!</b> 
 
 <b> If you got tired of typing "sudo" every time you ran a docker command when getting this configured, check out the tutorial 
 on modifying the VM's sudoers file to adjust this annoyance!</b>
