@@ -186,7 +186,7 @@ the DVWA login page!
 ![dvwa-login-page](https://user-images.githubusercontent.com/73140219/184471044-91a2be0e-0b97-4b48-870f-13b31e371f29.png)
 
 Feel free to poke around the web app, but we are done for now. After you have finished exploring, return 
-to the Terminal window where your dvwa container is running and press <b>CNTRL + C</b> (or <b>CMND + C</b> on Mac OSX) to exit 
+to the Terminal window where your dvwa container is running and press <b>CTRL + C</b> (or <b>CMND + C</b> on Mac OSX) to exit 
 the container, which will also remove it. You can confirm the container is removed by running the command `sudo docker ps`. 
 
 <b>That's it! Your Lab-Host is now configred to host various containers we will use to explore fundamental cyber security 
