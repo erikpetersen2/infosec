@@ -1,6 +1,6 @@
 # Preparing Your Personal Machine To Host A Lab Environment
 
-![Docker_Ubuntu_VBox_Logos](https://user-images.githubusercontent.com/73140219/184465354-6b4fe38d-e514-4ffa-aeb1-d4c55bc68dc2.png) 
+![logos](https://user-images.githubusercontent.com/73140219/184472010-9f94be8b-5028-45db-8fa8-803543098905.png)
 
 One of the best ways to get practical experience with the tools and techniques
 used in modern cyber security is to create your own instances of web
@@ -120,13 +120,31 @@ been created, Ubuntu will boot into the desktop environment, and you are officia
 
 ![set-user-and-pass](https://user-images.githubusercontent.com/73140219/184466503-572765a4-ef6e-4ac4-9113-03ed815c6048.png)
 
-<b>3. Configuring Your VM For Docker</b> \
+# Configuring Your VM For Docker
+
+![docker-logo](https://user-images.githubusercontent.com/73140219/184471196-4c357eec-10f2-4ebc-b4ed-9a6bbacf5062.png)
+
+<b> What's a Docker and how do I use it?</b>
+
+Docker is a Platform-as-a-Service (PaaS) solution that allows OS-level virtualization for software packages called
+"containers." Containers are stripped down and streamlined versions of software, hardware, and applications that are 
+(generally speaking) designed to meet a specific need or run a specific service. Think of using a container as being 
+similar to choose to eat a snack instead of a full meal. While preparing a meal would certainly satisfy your needs, 
+preparing a meal is time consuming, and there is much energy and many portions of the meal that may get wasted in the 
+process. Alternatively, grabbing a pre-packaged snack is quick, easy, and only consumes the resources it absolutely must. 
+Using Docker, we can quickly spin up (and just as quickly destroy) network, host, and application resources in near unlimited 
+configurations to meet whatever educational needs we may have at the time. 
+
+![docker-diagram](https://user-images.githubusercontent.com/73140219/184471912-83408c0f-c1ea-47b2-a72f-3fd50753bda4.png)
+
 Now that we have our machine running, let's get it configured to host our lab environment. The first thing we're 
 going to do is click the grid of nine dots in the lower left-hand corner of the VM to show our installed 
 applications. From there, we will select "Terminal." Familiarize yourself with Terminal, we will be using it 
 *a ton*. Once terminal is open, run the command 
 
 `sudo apt update`
+
+![apt-update](https://user-images.githubusercontent.com/73140219/184470539-8dbecb60-6ed3-4f60-8f67-87d0db3f885d.png)
 
 The terminal will ask you to input your password. You will notice when you type your password, there is no visual confirmation the terminal is taking 
 input. I assure you, it is. Type your password, and press "Enter." Assuming you typed your password correctly, 
@@ -135,10 +153,12 @@ completed, and the command prompt has returned, run the command
 
 `sudo apt upgrade -y`
 
+![apt-upgrade](https://user-images.githubusercontent.com/73140219/184470567-4f1710ff-8897-4c79-b773-33870000cc23.png)
+
 This will update all applications with available updates and answer "yes" to all prompts. This command may take several minutes to 
 complete. Once this command has completed and the command prompt has returned again, run the command 
 
-`sudo apt install docker.io`
+`sudo apt install docker.io -y`
 
 to install the Docker service. Once Docker is installed, you can confirm the service is running by running the command 
 
@@ -156,8 +176,16 @@ actually spawn the container, run the command
 Enter your password, and then Docker will do its thing! Once the container is running, you will want to let it occupy that instance 
 of your terminal. Launch Firefox from the Task Bar on the left-hand side, and navigate to the IP address of your dvwa container 
 (you can find the IP address of the container in the output of the command we ran to launch the container, most likely 
-172.17.0.2). Once you have entered your dvwa container's IP address in the URL bar, hit enter, and you should be met with 
-the DVWA login page! Feel free to poke around the web app, but we are done for now. After you have finished exploring, return 
+172.17.0.2). 
+
+![ip-of-container](https://user-images.githubusercontent.com/73140219/184470982-648deb75-f7da-4bb4-82ac-9092892031fb.png)
+
+Once you have entered your dvwa container's IP address in the URL bar, hit enter, and you should be met with 
+the DVWA login page! 
+
+![dvwa-login-page](https://user-images.githubusercontent.com/73140219/184471044-91a2be0e-0b97-4b48-870f-13b31e371f29.png)
+
+Feel free to poke around the web app, but we are done for now. After you have finished exploring, return 
 to the Terminal window where your dvwa container is running and press <b>CNTRL + C</b> (or <b>CMND + C</b> on Mac OSX) to exit 
 the container, which will also remove it. You can confirm the container is removed by running the command `sudo docker ps`. 
 
