@@ -1,12 +1,12 @@
 # The Linux Fundamentals Module
 
-![Linux_Penguin](https://opensource.com/sites/default/files/lead-images/tux_linux_penguin_code_binary.jpg)
-
 <b>Welcome to Linux!</b> 
 
 ![Relevant_XKCD](https://www.cyberciti.biz/media/new/cms/2020/09/incident.png)
 
 # What's a Linux and Why do I Want One?
+
+![Linux_Penguin](https://opensource.com/sites/default/files/lead-images/tux_linux_penguin_code_binary.jpg)
 
 Linux is an open-source computer operating system, similar to closed-source solutions you're likely much more familiar with 
 like <b>Windows</b> or <b>Mac OSX</b> (open-source means the source code for the software is known and publicly available 
