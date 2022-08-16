@@ -31,7 +31,7 @@ processor on x86 (non-ARM) architecture.
 
 When installing VirtualBox on Mac OSX, you will need to navigate to the 
 Security & Privacy tab of your System Settings, click the lock in the lower 
-left-hand corner, authenticate via password of biometrics, and then check the 
+left-hand corner, authenticate via password or biometrics, and then check the 
 available box to allow Oracle VirtualBox to make changes to your system. If 
 you do not complete this step, you will be unable to provision any virtual
 machines. <b> To repair your installation if you have run into this issue, 
