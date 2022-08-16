@@ -64,4 +64,9 @@ go?
 `BONUS:` What type of shell is Terminal? 
 
 <b>Write your answers in the text editor of your choice and name the file 
-`YOURNAME-Scavenger-Hunt.txt`.  
+`YOURNAME-Scavenger-Hunt.txt`. In the VM's file explorer, drag your answer 
+file from your VM to your host machine. From there, you can upload them to 
+Google Drive and share them with me, or you can email them to me at 
+`erik@erikpetersen.tech`. 
+
+<b>Congratulations! You just completed your first lab!</b> 
