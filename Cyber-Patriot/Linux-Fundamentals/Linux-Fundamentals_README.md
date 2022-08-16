@@ -1,6 +1,6 @@
 # The Linux Fundamentals Module
 
-<b>Welcome to Linux!</b> \
+<b>Welcome to Linux!</b> 
 
 ![Relevant_XKCD](https://www.cyberciti.biz/media/new/cms/2020/09/incident.png)
 
