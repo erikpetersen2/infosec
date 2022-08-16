@@ -1,5 +1,7 @@
 # The Linux Fundamentals Module
 
+![Linux_Penguin](https://opensource.com/sites/default/files/lead-images/tux_linux_penguin_code_binary.jpg)
+
 <b>Welcome to Linux!</b> 
 
 ![Relevant_XKCD](https://www.cyberciti.biz/media/new/cms/2020/09/incident.png)
