@@ -114,4 +114,61 @@ Use the `ls` command and its switches to
 
 <b><u>Try it Out!</b></u>
 
-Take a few minutes to familiarize yourself with 
+Take a few minutes to familiarize yourself with Ubuntu and the Terminal by 
+using both `cd` and `ls` to move around the VM and see what files and 
+directories are where. 
+
+# pwd - Print Working Directory
+
+You may have noticed as you were moving around the Terminal that from time to 
+time, you may have forgotten where you were or been unsure of how to get back 
+from where you started. Luckily, this is where `pwd` comes in. `pwd`, or 
+<b>P</b>rint <b>W</b>orking <b>D</b>irectory, is a way to output your current 
+directory to the terminal for you to see:
+
+![pwd-demonstration](https://imgur.com/a/CDGhTN2)
+
+# su - Super User Do
+
+Sometimes, you will need to run commands with elevated privileges. As you can 
+imagine, it would be insecure to have all users on a system or network be 
+able to run all commands and services. However, it would also be a 
+poor choice to have administrative users run <i>every</i> command with 
+elevated privileges. Enter `sudo`, or <b>S</b>uper <b>U</b>er <b>Do</b>. 
+By invoking `sudo` at the beginning of any command, you tell the Terminal to 
+run that command as the <b>super user</b> or, as you'll most often hear it 
+called in the Linux environment, <b>root</b>. Because the root user has no 
+restrictions, any/all commands run as the root user are passed into the 
+Terminal without any restrictions or warnings. As such, it is <b>EXTREMELY</b> 
+important to pay attention to what commands you run with `sudo`. 
+
+<b>Try It Out!</b>
+
+1. Run the command `cat /etc/passwd` and observe the response you get from 
+your system. Notice your user account does not have permission to run this 
+command (it's okay that we haven't covered the `cat` command, we will cover 
+this in the File-Management module). 
+2. Now, run the same command, but with `sudo` in front of it as follows: 
+`sudo cat /etc/passwd`. Enter your password when prompted, and notice that 
+this time, the command completes successfully. 
+
+# Knowledge Check
+
+Use a combination of `cd`, `ls`, `pwd`, and `sudo` to answer the following 
+questions: 
+
+1. How many users <b>have a home folder</b> on your system? (hint: where 
+might a user's <b>home</b> folder be located?)
+2. What are two different ways to use the `cd` command to switch from the 
+~/Documents/Research directory to your home folder? 
+3. What two hidden files are present in every directory? 
+4. Make a list of four files, directories, commands, etc that you cannot 
+access without using `sudo`.
+
+# Wrap-Up
+
+In this module, we looked at four fundamental commands to the Linux 
+environment: `cd`(change directory), `ls` (list), `pwd` (print 
+working directory), and `sudo` (super user do). These commands are crucial to 
+your success in later modules, so please make sure you're comfortable with 
+them before moving on.  
