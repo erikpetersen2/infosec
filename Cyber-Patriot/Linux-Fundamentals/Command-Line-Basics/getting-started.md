@@ -144,13 +144,15 @@ important to pay attention to what commands you run with `sudo`.
 
 <b>Try It Out!</b>
 
-1. Run the command `cat /etc/passwd` and observe the response you get from 
+1. Run the command `cat /etc/shadow` and observe the response you get from 
 your system. Notice your user account does not have permission to run this 
 command (it's okay that we haven't covered the `cat` command, we will cover 
 this in the File-Management module). 
 2. Now, run the same command, but with `sudo` in front of it as follows: 
-`sudo cat /etc/passwd`. Enter your password when prompted, and notice that 
-this time, the command completes successfully. 
+`sudo cat /etc/shadow`. Enter your password when prompted, and notice that 
+this time, the command completes successfully.
+
+![sudo-example](https://user-images.githubusercontent.com/73140219/185041573-3077451c-5981-4acb-b619-bc3f33ba82c6.png)
 
 # Knowledge Check
 
