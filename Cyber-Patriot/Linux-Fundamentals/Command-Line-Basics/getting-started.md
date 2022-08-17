@@ -126,7 +126,7 @@ from where you started. Luckily, this is where `pwd` comes in. `pwd`, or
 <b>P</b>rint <b>W</b>orking <b>D</b>irectory, is a way to output your current 
 directory to the terminal for you to see:
 
-![pwd-demonstration](https://imgur.com/a/CDGhTN2)
+![pwd-demonstration](https://user-images.githubusercontent.com/73140219/185041301-5d4a0f96-7cd6-4a38-9382-f2d63be5cbc7.png)
 
 # su - Super User Do
 
