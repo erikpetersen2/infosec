@@ -59,9 +59,9 @@ I will warn you that using relative paths can sometimes cause problems if
 you don't consider the total context of what you are doing. For example, 
 consider the following script: 
 
-```#!/bin/bash
+`#!/bin/bash
 touch some-file.txt
-echo "this is a script!" > some-file.txt```
+echo "this is a script!" > some-file.txt`
 
 This script creates a file called `some-file.txt` and then inserts the text 
 "this is a script!" to that file. If we were to run this script in our home 
@@ -70,15 +70,17 @@ However, if we ran this script in the `/usr/share` directory, we would end
 up with a file in `/usr/share` called `some-file.txt`, illustrated in the 
 example below: 
 
-[example goes here]
+![image](https://user-images.githubusercontent.com/73140219/185299709-8e82bb10-ee25-4ffd-abb0-76dbc43d139d.png)
+
+![image](https://user-images.githubusercontent.com/73140219/185299763-a1c26520-b88a-4f70-8bd0-a43cfe348a05.png)
 
 However, if we run that same script with a slight modification, we will see 
 how behavior of our system can change depending on whether we use the relative 
 or absolute path. Note the changes to our script below: 
 
-```#!/bin/bash
+`#!/bin/bash
 touch ~/Documents/some-file.txt
-echo "this is a script!" > ~/Documents/some-file.txt```
+echo "this is a script!" > ~/Documents/some-file.txt`
 
 In this script, because the path of the file `some-file.txt` is <b><i>explicity 
 specified starting at the beginning of the directory structure</b></i>, the 
@@ -87,7 +89,7 @@ is a short-hand for `/home/username`, so writing the above script with the
 path `/home/username/Documents/some-file.txt` would yield identical results, 
 as shown in the example below: 
 
-[example script 2]
+![image](https://user-images.githubusercontent.com/73140219/185300249-f26cf75c-34ef-4b31-a0d5-a0c24cad67ab.png)
 
 <b> rm - Remove </b>
 
@@ -147,8 +149,8 @@ What would happen if we ran the command again, but we changed the text of the
 `echo` command? Let's find out! Run the following commands in your Terminal 
 window: 
 
-```echo "I am an information security professional!" > professional.txt
-cat professional.txt```
+`echo "I am an information security professional!" > professional.txt
+cat professional.txt`
 
 Notice that the contents of the file `professional.txt` now reflect the contents 
 of the command we just ran, and <b><i>ONLY</b></i> the command we just ran. 
@@ -160,8 +162,8 @@ most recent command to the existing file, using a `>>` as opposed to a `>`.
 This will echo the contents of the command to the bottom of a file. Let's try 
 it! Run the following commands in your terminal: 
 
-```echo "I love cyber security!" >> professional.txt
-cat professional.txt```
+`echo "I love cyber security!" >> professional.txt
+cat professional.txt`
 
 Notice this time, by using the `>>` as opposed to the `>`, the original contents 
 of the file are preserved, and the new information is added to the bottom. 
@@ -234,7 +236,7 @@ the one you were looking for, but as you can imagine, that would be exteremely
 inefficient and time-consuming. Instead, we use the `find` command. Run the 
 following command in your Terminal window: 
 
-`curl -O [url path goes here] && chmod 755 find-demo.sh && ./find-demo.sh`
+`curl -O https://raw.githubusercontent.com/erikpetersen2/infosec/main/Scripts/Environment-Config/find-demo.sh && chmod 755 find-demo.sh && ../find-demo.sh`
 
 This command will download and execute a script that will hide a file called 
 "flag.txt" somewhere in your file system. Use the `find` command to locate the 
@@ -269,7 +271,8 @@ information that we do not need for this audit. To clean this output up, we will
 use the `awk` command. First, let's run the `cat` command to see what the 
 `/etc/passwd` file looks like with no manipulation: 
 
-![/etc/passwd-screenshot](url goes here)
+![/etc/passwd-example](https://user-images.githubusercontent.com/73140219/185296556-a2342ad5-ea4e-4169-bb58-7a9ff0532d9b.png)
+
 
 Now, instead of using `cat` to dump all the contents of the file into our Terminal, 
 we will use the `awk` command to simply the output and make it more human-
@@ -297,7 +300,8 @@ the delimiter would no longer be a space, but would be a comma.</i>
 If we run the command above, we should get output that looks something like 
 this: 
 
-![/etc/passwd-with-awk](url goes here)
+![/etc/passwd-with-awk](https://user-images.githubusercontent.com/73140219/185296737-1dfd2a33-39f7-4ca1-aa19-607506f1e353.png)
+
 
 # Putting It All Together (command-line-basics-continued challenge)
 
