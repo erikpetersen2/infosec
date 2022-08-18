@@ -33,7 +33,7 @@ a file by its path, the `relative path` and the `absolute path`.
 
 A file's <b>relative path</b> is the path to the file <b>from the current 
 directory</b>. For instance, if you are currently in your home folder (the 
-folder you always start the Terminal in), and your home folder, you have a 
+folder you always start the Terminal in), you have a 
 folder named `Documents`, and in the Documents folder, you have a file called 
 `path.txt`. From your home folder, the relative path to the file `path.txt` is 
 `Documents/path.txt`, because to get from your home folder to the file `path.txt`, 
@@ -60,7 +60,9 @@ you don't consider the total context of what you are doing. For example,
 consider the following script: 
 
 `#!/bin/bash
+
 touch some-file.txt
+
 echo "this is a script!" > some-file.txt`
 
 This script creates a file called `some-file.txt` and then inserts the text 
@@ -79,7 +81,9 @@ how behavior of our system can change depending on whether we use the relative
 or absolute path. Note the changes to our script below: 
 
 `#!/bin/bash
+
 touch ~/Documents/some-file.txt
+
 echo "this is a script!" > ~/Documents/some-file.txt`
 
 In this script, because the path of the file `some-file.txt` is <b><i>explicity 
