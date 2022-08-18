@@ -59,11 +59,7 @@ I will warn you that using relative paths can sometimes cause problems if
 you don't consider the total context of what you are doing. For example, 
 consider the following script: 
 
-`#!/bin/bash`
-
-`touch some-file.txt`
-
-`echo "this is a script!" > some-file.txt`
+![image](https://user-images.githubusercontent.com/73140219/185437044-5493c148-ed30-48a1-882a-17f8025f66a0.png)
 
 This script creates a file called `some-file.txt` and then inserts the text 
 "this is a script!" to that file. If we were to run this script in our home 
@@ -80,11 +76,7 @@ However, if we run that same script with a slight modification, we will see
 how behavior of our system can change depending on whether we use the relative 
 or absolute path. Note the changes to our script below: 
 
-`#!/bin/bash`
-
-`touch ~/Documents/some-file.txt`
-
-`echo "this is a script!" > ~/Documents/some-file.txt`
+![some-file-absolute-script](https://user-images.githubusercontent.com/73140219/185436846-4226c8cb-a446-4e5e-8d37-2342db9da06d.png)
 
 In this script, because the path of the file `some-file.txt` is <b><i>explicity 
 specified starting at the beginning of the directory structure</b></i>, the 
