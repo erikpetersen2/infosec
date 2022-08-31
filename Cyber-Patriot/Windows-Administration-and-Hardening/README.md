@@ -1,8 +1,8 @@
-## Unit 7 README: Windows Administration and Hardening
+## Windows Administration and Hardening
 
 ### Unit Description
 
-In our introduction to the Windows operating system, we will learn Windows-based system administration. We will cover the Windows operating system and command line by performing basic system administration tasks. We will depart from the standard command line by using the PowerShell command-line scripting language to create and execute scripts. We will also manage Active Directory Domain Services and secure a Windows Server domain.
+In our introduction to the Windows operating system, we will learn Windows-based system administration. We will cover the Windows operating system and command line by performing basic system administration tasks. We will depart from the standard command line by using the PowerShell command-line scripting language to create and execute scripts. 
 
 ### Unit Objectives 
 
@@ -24,46 +24,19 @@ In our introduction to the Windows operating system, we will learn Windows-based
     - Use PowerShell pipelines to retrieve Windows system event logs.
     - Combine various shell-scripting concepts such as cmdlets, parameters, piping, conditions, and importing files with data structures.
     
-- **Day 3:** Windows Active Directory Domain Services
-
-    - Explain how Active Directory is used to manage enterprise-scale environments.
-    - Define domain controllers as servers that manage AD authentication and authorization.
-    - Use Active Directory tools to create organizational units, users, and groups.
-    - Create and link Group Policy Objects that enforce domain-hardening policies.
-
 </details>
 
 
 ### Lab Environment
 
-This unit will use an online Azure lab environment. This environment consists of a Windows RDP Host machine that houses two nested virtual machines: a Windows 10 machine and a Windows Server machine. Use the following credentials:
+This unit will use an online lab environment. This environment consists of a Windows RDP Host machine that has been configured for use with the unit's activities. Use the following credentials:
 
 - Windows RDP Host Machine
 
-   - Username: `azadmin`
-   - Password: `p4ssw0rd*`
-
-- Windows 10 Machine (used on Day 3)
-- Username: `sysadmin`
-   - Password: `cybersecurity`
-   
-- Windows Server Machine (used on Day 3)
-
-   - Username: `sysadmin`
+   - Username: `CyberPatriot`
    - Password: `p4ssw0rd*`
 
 ### What to Be Aware Of
-
-- Don't forget to shut down your virtual machines and your Windows Azure lab at the end of each class and when they are not in use.
-
-- You will be provided 30 hours of Azure lab access.
-
-    - If you exceed that quota, you will be provided an additional 10 hours.
-
-    - If you exceed those additional hours, you will be provided an additional 5 hours.
-
-    - Once you exceed the final quota, you will not be provided any additional hours. It is extremely important that you preserve your allotted hours by shutting off your machines at the end of each class.
-
 
 - The following document contains a list of common Windows issues that may occur during this unit. Review the content to prepare for potential troubleshooting:
 
@@ -153,20 +126,7 @@ These resources are provided as optional, recommended resources to expand on and
 
 ---
 
-### Unit 7: Homework 
-
-For the homework, you will be expanding on domain-hardening Group Policy Objects and testing them. You will also create a PowerShell script to automate the retrieval of access control lists. 
-
-This unit's homework assignment can be viewed here: 
-
-- [Unit Homework File](../../2-Homework/07-Windows-Administration-and-Hardening/README.md)
-
-### Looking Forward 
-
-Next week, we'll be moving on to our Networking Module! We will start by learning the fundamentals of network configurations, designs, protocols, and data communication. We'll also be working in our Vagrant machines again. Make sure to pull the latest versions of the Vagrant lab.
-
 
 ---
 
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.    
+  
