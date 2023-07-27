@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nc -l -p 4444
+nc -l 4444
